@@ -115,9 +115,17 @@ index:</p>
 <p>Can you find the flag in <a href="https://2019shell1.picoctf.com/static/20314c5941bbf36a5eaa2e0926fb1cb5/file">file</a>? This would be really tedious to look through manually, something tells me there is a better way. You can also find the file in /problems/first-grep_3_2e09f586a51352180a37e25913f5e5d9 on the shell server.</p>
 <h3 id="solution-10"><em>Solution</em></h3>
 <p>考察grep基础用法</p>
-<blockquote></blockquote>
+<blockquote>
+<p>grep pico file</p>
+</blockquote>
+<p>或</p>
+<blockquote>
+<p>./file | grep pico*</p>
+</blockquote>
 <h3 id="flag-10"><em>Flag</em></h3>
-<blockquote></blockquote>
+<blockquote>
+<p>picoCTF{grep_is_good_to_find_things_5f0c3d9e}</p>
+</blockquote>
 <h2 id="section-1">**</h2>
 <h3 id="chanllenge-11"><em>Chanllenge</em></h3>
 <h3 id="solution-11"><em>Solution</em></h3>
