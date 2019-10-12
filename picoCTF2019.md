@@ -124,11 +124,54 @@ index:</p>
 </blockquote>
 <h3 id="flag-10"><em>Flag</em></h3>
 <blockquote>
-<p>picoCTF{grep_is_good_to_find_things_5f0c3d9e}</p>
+<p>picoCTF{grep_is_good_to_find_things_eda8911c}</p>
+</blockquote>
+<h2 id="resources"><em>Resources</em></h2>
+<h3 id="chanllenge-11"><em>Chanllenge</em></h3>
+<p>We put together a bunch of resources to help you out on our website! If you go over there, you might even find a flag! <code>https://picoctf.com/resources</code> (<a href="https://picoctf.com/resources">link</a>)</p>
+<h3 id="solution-11"><em>Solution</em></h3>
+<p>打开链接就知道了</p>
+<h3 id="flag-11"><em>Flag</em></h3>
+<blockquote>
+<p><code>picoCTF{r3source_pag3_f1ag}</code></p>
+</blockquote>
+<h2 id="caesar"><em>caesar</em></h2>
+<h3 id="chanllenge-12"><em>Chanllenge</em></h3>
+<p>Decrypt this <a href="https://2019shell1.picoctf.com/static/b67dd108828e8d030d7babaeb89df172/ciphertext">message</a>. You can find the ciphertext in /problems/caesar_2_10e2c1660e7b34790d93f61a1e4dd9d9 on the shell server.</p>
+<h3 id="solution-12"><em>Solution</em></h3>
+<p>Caesar cipher</p>
+<h3 id="flag-12"><em>Flag</em></h3>
+<blockquote>
+<p>picoCTF{crossingtherubiconvrtezsxl}</p>
+</blockquote>
+<h2 id="dont-use-client-side"><em>dont-use-client-side</em></h2>
+<h3 id="chanllenge-13"><em>Chanllenge</em></h3>
+<p>Can you break into this super secure portal? <code>https://2019shell1.picoctf.com/problem/37893/</code> (<a href="https://2019shell1.picoctf.com/problem/37893/">link</a>) or <a href="http://2019shell1.picoctf.com:37893">http://2019shell1.picoctf.com:37893</a></p>
+<h3 id="solution-13"><em>Solution</em></h3>
+<p>检查网页源码</p>
+<blockquote>
+<p>function verify() {<br>
+checkpass = document.getElementById(“pass”).value;<br>
+split = 4;<br>
+if (checkpass.substring(0, split) == ‘pico’) {<br>
+if (checkpass.substring(split<em>6, split</em>7) == ‘0ff3’) {<br>
+if (checkpass.substring(split, split<em>2) == ‘CTF{’) {<br>
+if (checkpass.substring(split</em>4, split<em>5) == ‘ts_p’) {<br>
+if (checkpass.substring(split</em>3, split<em>4) == ‘lien’) {<br>
+if (checkpass.substring(split</em>5, split<em>6) == ‘lz_9’) {<br>
+if (checkpass.substring(split</em>2, split<em>3) == ‘no_c’) {<br>
+if (checkpass.substring(split</em>7, split*8) == ‘4}’) {<br>
+alert(“Password Verified”)<br>
+…</p>
+</blockquote>
+<p>根据顺序还原flag</p>
+<h3 id="flag-13"><em>Flag</em></h3>
+<blockquote>
+<p>picoCTF{no_clients_plz_90ff34}</p>
 </blockquote>
 <h2 id="section-1">**</h2>
-<h3 id="chanllenge-11"><em>Chanllenge</em></h3>
-<h3 id="solution-11"><em>Solution</em></h3>
-<h3 id="flag-11"><em>Flag</em></h3>
+<h3 id="chanllenge-14"><em>Chanllenge</em></h3>
+<h3 id="solution-14"><em>Solution</em></h3>
+<h3 id="flag-14"><em>Flag</em></h3>
 <blockquote></blockquote>
 
