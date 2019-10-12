@@ -11,7 +11,7 @@
 <p>单纯的进制转换</p>
 <h3 id="flag"><em>Flag</em></h3>
 <blockquote>
-<p>picoCTF{10101}</p>
+<p>picoCTF{101010}</p>
 </blockquote>
 <h2 id="glory-of-the-garden"><em>Glory of the Garden</em></h2>
 <h3 id="chanllenge-1"><em>Chanllenge</em></h3>
@@ -42,5 +42,14 @@ index:</p>
 <h3 id="flag-2"><em>Flag</em></h3>
 <blockquote>
 <p>picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?39dd9e36}</p>
+</blockquote>
+<h2 id="lets-warm-up"><em>Lets Warm Up</em></h2>
+<h3 id="chanllenge-3"><em>Chanllenge</em></h3>
+<p>If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII?</p>
+<h3 id="solution-3"><em>Solution</em></h3>
+<p>16进制转ASCii码</p>
+<h3 id="flag-3"><em>Flag</em></h3>
+<blockquote>
+<p>picoCTF{p}</p>
 </blockquote>
 
