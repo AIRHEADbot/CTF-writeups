@@ -237,12 +237,16 @@ Rockstar是一种语言编译器！<br>
 <blockquote>
 <p>picoCTF{h1d1ng_1n_th3_b1t5}</p>
 </blockquote>
-<h2 id="section">**</h2>
+<h2 id="extensions"><em>extensions</em></h2>
 <h4 id="chanllenge-20"><em>Chanllenge</em></h4>
+<p>This is a really weird text file <a href="https://2019shell1.picoctf.com/static/45886ed4b6d5d1dc74c4944fcf4b4041/flag.txt">TXT</a>? Can you find the flag?</p>
 <h4 id="solution-20"><em>Solution</em></h4>
+<p>拓展名改为png即可</p>
 <h4 id="flag-20"><em>Flag</em></h4>
-<blockquote></blockquote>
-<h2 id="section-1">**</h2>
+<blockquote>
+<p>picoCTF{now_you_know_about_extensions}</p>
+</blockquote>
+<h2 id="section">**</h2>
 <h4 id="chanllenge-21"><em>Chanllenge</em></h4>
 <h4 id="solution-21"><em>Solution</em></h4>
 <h4 id="flag-21"><em>Flag</em></h4>
@@ -258,7 +262,7 @@ Rockstar是一种语言编译器！<br>
 <blockquote>
 <p>PICOCTF{THENUMBERSMASON}</p>
 </blockquote>
-<h2 id="section-2"><em>13</em></h2>
+<h2 id="section-1"><em>13</em></h2>
 <h4 id="chanllenge-23"><em>Chanllenge</em></h4>
 <p>Cryptography can be easy, do you know what ROT13 is? <code>cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}</code></p>
 <h4 id="solution-23"><em>Solution</em></h4>
@@ -350,7 +354,7 @@ alert(“Password Verified”)<br>
 <h4 id="solution-29"><em>Solution</em></h4>
 <h4 id="flag-29"><em>Flag</em></h4>
 <blockquote></blockquote>
-<h2 id="section-3">**</h2>
+<h2 id="section-2">**</h2>
 <h4 id="chanllenge-30"><em>Chanllenge</em></h4>
 <h4 id="solution-30"><em>Solution</em></h4>
 <h4 id="flag-30"><em>Flag</em></h4>
