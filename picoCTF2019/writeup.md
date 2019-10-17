@@ -4,8 +4,9 @@
 ---
 
 <h1 id="picoctf2019-writeup"><em>picoCTF2019-writeup</em></h1>
-<h2 id="warm"><em>2Warm</em></h2>
-<h3 id="chanllenge"><em>Chanllenge</em></h3>
+<h2 id="general-skills"><em>General Skills</em></h2>
+<h3 id="warm"><em>2Warm</em></h3>
+<h4 id="chanllenge"><em>Chanllenge</em></h4>
 <p>Can you convert the number 42 (base 10) to binary (base 2)?</p>
 <h3 id="solution"><em>Solution</em></h3>
 <p>单纯的进制转换</p>
@@ -169,9 +170,24 @@ alert(“Password Verified”)<br>
 <blockquote>
 <p>picoCTF{no_clients_plz_90ff34}</p>
 </blockquote>
-<h2 id="section-1">**</h2>
+<h2 id="logon"><em>logon</em></h2>
 <h3 id="chanllenge-14"><em>Chanllenge</em></h3>
+<p>The factory is hiding things from all of its users. Can you login as logon and find what they’ve been looking at? <code>https://2019shell1.picoctf.com/problem/49907/</code> (<a href="https://2019shell1.picoctf.com/problem/49907/">link</a>) or <a href="http://2019shell1.picoctf.com:49907">http://2019shell1.picoctf.com:49907</a></p>
 <h3 id="solution-14"><em>Solution</em></h3>
+<p>经过尝试，发现非admin用户可以登录，却无法获得flag。查看网页cookie，将其中admin元素False改为True。</p>
 <h3 id="flag-14"><em>Flag</em></h3>
+<blockquote>
+<p>picoCTF{th3_c0nsp1r4cy_l1v3s_9e21365b}</p>
+</blockquote>
+<h2 id="strings-it"><em>strings it</em></h2>
+<h3 id="chanllenge-15"><em>Chanllenge</em></h3>
+<p>Can you find the flag in <a href="https://2019shell1.picoctf.com/static/762b9a36a6da791e3f61713fcfaf1721/strings">file</a> without running it? You can also find the file in /problems/strings-it_2_865eec66d190ef75386fb14e15972126 on the shell server.</p>
+<h3 id="solution-15"><em>Solution</em></h3>
+<h3 id="flag-15"><em>Flag</em></h3>
+<blockquote></blockquote>
+<h2 id="section-1">**</h2>
+<h3 id="chanllenge-16"><em>Chanllenge</em></h3>
+<h3 id="solution-16"><em>Solution</em></h3>
+<h3 id="flag-16"><em>Flag</em></h3>
 <blockquote></blockquote>
 
