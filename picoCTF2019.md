@@ -298,9 +298,12 @@ system(‘unar ./{}/{}.tar’.format(i+1, i))</p>
 <h4 id="chanllenge-25"><em>Chanllenge</em></h4>
 <p>Decode this  <a href="https://2019shell1.picoctf.com/static/f5ca745ad5d88a890b5f20b8ffde3d70/message.wav">message</a>  from the moon. You can also find the file in /problems/m00nwalk_4_bcf65d52e5462dd0b70c0e984d7d5015.</p>
 <h4 id="solution-25"><em>Solution</em></h4>
-<p>Hints告诉我们，这可能和地月消息传输有关。经过查阅资料，我们发现有关传输方法为SSTV（Slow-scan television）。这是一种图片传输方法。</p>
+<p>Hints告诉我们，这可能和地月消息传输有关。经过查阅资料，我们发现有关传输方法为SSTV（Slow-scan television）。这是一种图片传输方法。<br>
+但是图片提取失败了orz</p>
 <h4 id="flag-25"><em>Flag</em></h4>
-<blockquote></blockquote>
+<blockquote>
+<p>？？？</p>
+</blockquote>
 <h2 id="cryptography"><em>Cryptography</em></h2>
 <h2 id="the-numbers"><em>The Numbers</em></h2>
 <h4 id="chanllenge-26"><em>Chanllenge</em></h4>
