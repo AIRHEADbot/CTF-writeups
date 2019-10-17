@@ -246,57 +246,105 @@ Rockstar是一种语言编译器！<br>
 <blockquote>
 <p>picoCTF{now_you_know_about_extensions}</p>
 </blockquote>
-<h2 id="section">**</h2>
+<h2 id="shark-on-wire-1"><em>shark on wire 1</em></h2>
 <h4 id="chanllenge-21"><em>Chanllenge</em></h4>
+<p>We found this  <a href="https://2019shell1.picoctf.com/static/ae9ca8cff43ed638ed5d137f9ece7455/capture.pcap">packet capture</a>. Recover the flag. You can also find the file in /problems/shark-on-wire-1_0_13d709ec13952807e477ba1b5404e620.</p>
+<p>Submit!</p>
 <h4 id="solution-21"><em>Solution</em></h4>
 <h4 id="flag-21"><em>Flag</em></h4>
+<blockquote>
+<p>？？？</p>
+</blockquote>
+<h2 id="whitepages"><em>WhitePages</em></h2>
+<h4 id="chanllenge-22"><em>Chanllenge</em></h4>
+<p>I stopped using YellowPages and moved onto WhitePages… but <a href="https://2019shell1.picoctf.com/static/e134178261c6fa36e9058d5408118dd9/whitepages.txt">the page they gave me</a> is all blank!</p>
+<h4 id="solution-22"><em>Solution</em></h4>
+<p>用Geany和Winhex查看后，发现文件中的空白有两种模式（\xe2\x80\83 &amp; \x20)<br>
+ps:\x20是ASCII的空格表示，而\xe2\x80\83是Unicode的空格表示<br>
+既然有两种模式，猜想可转化为MorseCode<br>
+将<code>e28083</code>视作<code>0</code> 或<code></code>，<code>20</code>视作<code>1</code> 或<code>_</code></p>
+<h4 id="flag-22"><em>Flag</em></h4>
+<blockquote>
+<p>picoCTF{not_all_spaces_are_created_equal_dd5c2e2f77f89f3051c82bfee7d996ef}</p>
+</blockquote>
+<h2 id="c0rrupt"><em>c0rrupt</em></h2>
+<h4 id="chanllenge-23"><em>Chanllenge</em></h4>
+<p>We found this <a href="https://2019shell1.picoctf.com/static/3435d990f1d20fe3563cbb897b4c96db/mystery">file</a>. Recover the flag. You can also find the file in /problems/c0rrupt_0_1fcad1344c25a122a00721e4af86de13.</p>
+<h4 id="solution-23"><em>Solution</em></h4>
+<p>这是一道修复png文件头的题目<br>
+修复结果如下：<br>
+<img src="https://lh3.googleusercontent.com/dLAzfwrNtTwtjNdt3GDVrL7UvNNE6QuCKrynPMSMucQn6IiiqA-lMA43Os14jKvF9LuZlVjT4AE" alt="enter image description here" title="c0rrupt"><br>
+此处有几个关键点：PNG文件署名、CRC（校验值）、IDAT（图像数据块）标识。而中间的gAMA、PHYs等都是关键数据块中的可选项。</p>
+<h4 id="flag-23"><em>Flag</em></h4>
+<blockquote>
+<p>picoCTF{c0rrupt10n_1847995}</p>
+</blockquote>
+<h2 id="like1000"><em>like1000</em></h2>
+<h4 id="chanllenge-24"><em>Chanllenge</em></h4>
+<p>This <a href="https://2019shell1.picoctf.com/static/8694f84879d3b7c0dcf775930f4665fc/1000.tar">.tar file</a> got tarred alot. Also available at /problems/like1000_0_369bbdba2af17750ddf10cc415672f1c.</p>
+<h4 id="solution-24"><em>Solution</em></h4>
+<p>这是个压缩了1000次的压缩包，半小时之内肯定能手动解压出来的（确信）当然，我更推荐编写脚本进行解压。</p>
+<blockquote>
+<p>from os import system</p>
+<p>system(‘unar ./1000.tar’)<br>
+for i in range(999, -1, -1):<br>
+system(‘unar ./{}/{}.tar’.format(i+1, i))</p>
+</blockquote>
+<h4 id="flag-24"><em>Flag</em></h4>
+<blockquote>
+<p>picoCTF{l0t5_0f_TAR5}</p>
+</blockquote>
+<h2 id="section">**</h2>
+<h4 id="chanllenge-25"><em>Chanllenge</em></h4>
+<h4 id="solution-25"><em>Solution</em></h4>
+<h4 id="flag-25"><em>Flag</em></h4>
 <blockquote></blockquote>
 <h2 id="cryptography"><em>Cryptography</em></h2>
 <h2 id="the-numbers"><em>The Numbers</em></h2>
-<h4 id="chanllenge-22"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-26"><em>Chanllenge</em></h4>
 <p>The <a href="https://2019shell1.picoctf.com/static/eb3589c566dd3f809908053460acb817/the_numbers.png">numbers</a>… what do they mean?</p>
-<h4 id="solution-22"><em>Solution</em></h4>
+<h4 id="solution-26"><em>Solution</em></h4>
 <p><img src="https://2019shell1.picoctf.com/static/eb3589c566dd3f809908053460acb817/the_numbers.png" alt="enter image description here"><br>
 显然是26个字母和数字一一对应</p>
-<h4 id="flag-22"><em>Flag</em></h4>
+<h4 id="flag-26"><em>Flag</em></h4>
 <blockquote>
 <p>PICOCTF{THENUMBERSMASON}</p>
 </blockquote>
 <h2 id="section-1"><em>13</em></h2>
-<h4 id="chanllenge-23"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-27"><em>Chanllenge</em></h4>
 <p>Cryptography can be easy, do you know what ROT13 is? <code>cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}</code></p>
-<h4 id="solution-23"><em>Solution</em></h4>
+<h4 id="solution-27"><em>Solution</em></h4>
 <p>最基础的Caesar cipher<br>
 也称ROT13<br>
 最简易的替换式密码<br>
 <a href="https://rot13.com/">https://rot13.com/</a></p>
-<h4 id="flag-23"><em>Flag</em></h4>
+<h4 id="flag-27"><em>Flag</em></h4>
 <blockquote>
 <p>picoCTF{not_too_bad_of_a_problem}</p>
 </blockquote>
 <h2 id="easy1"><em>Easy1</em></h2>
-<h4 id="chanllenge-24"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-28"><em>Chanllenge</em></h4>
 <p>The one time pad can be cryptographically secure, but not when you know the key. Can you solve this? We’ve given you the encrypted flag, key, and a table to help <code>UFJKXQZQUNB</code> with the key of <code>SOLVECRYPTO</code>. Can you use this <a href="https://2019shell1.picoctf.com/static/30d4405c34cf6490b082e6cf8f56ac56/table.txt">table</a> to solve it?.</p>
-<h4 id="solution-24"><em>Solution</em></h4>
+<h4 id="solution-28"><em>Solution</em></h4>
 <p>杰弗逊盘</p>
-<h4 id="flag-24"><em>Flag</em></h4>
+<h4 id="flag-28"><em>Flag</em></h4>
 <blockquote>
 <p>picoCTF{CRYPTOISFUN}</p>
 </blockquote>
 <h2 id="caesar"><em>caesar</em></h2>
-<h4 id="chanllenge-25"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-29"><em>Chanllenge</em></h4>
 <p>Decrypt this <a href="https://2019shell1.picoctf.com/static/b67dd108828e8d030d7babaeb89df172/ciphertext">message</a>. You can find the ciphertext in /problems/caesar_2_10e2c1660e7b34790d93f61a1e4dd9d9 on the shell server.</p>
-<h4 id="solution-25"><em>Solution</em></h4>
+<h4 id="solution-29"><em>Solution</em></h4>
 <p>Caesar cipher</p>
-<h4 id="flag-25"><em>Flag</em></h4>
+<h4 id="flag-29"><em>Flag</em></h4>
 <blockquote>
 <p>picoCTF{crossingtherubiconvrtezsxl}</p>
 </blockquote>
 <h2 id="web"><em>Web</em></h2>
 <h2 id="insp3ct0r"><em>Insp3ct0r</em></h2>
-<h4 id="chanllenge-26"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-30"><em>Chanllenge</em></h4>
 <p>Kishor Balan tipped us off that the following code may need inspection: <code>https://2019shell1.picoctf.com/problem/52962/</code> (<a href="https://2019shell1.picoctf.com/problem/52962/">link</a>) or <a href="http://2019shell1.picoctf.com:52962">http://2019shell1.picoctf.com:52962</a></p>
-<h3 id="solution-26"><em>Solution</em></h3>
+<h3 id="solution-30"><em>Solution</em></h3>
 <p>检查网页源码，发现以下三段信息<br>
 index:</p>
 <blockquote>
@@ -310,14 +358,14 @@ index:</p>
 <blockquote>
 <p>Javascript sure is neat. Anyways part 3/3 of the flag: _lucky?39dd9e36}</p>
 </blockquote>
-<h3 id="flag-26"><em>Flag</em></h3>
+<h3 id="flag-30"><em>Flag</em></h3>
 <blockquote>
 <p>picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?39dd9e36}</p>
 </blockquote>
 <h2 id="dont-use-client-side"><em>dont-use-client-side</em></h2>
-<h4 id="chanllenge-27"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-31"><em>Chanllenge</em></h4>
 <p>Can you break into this super secure portal? <code>https://2019shell1.picoctf.com/problem/37893/</code> (<a href="https://2019shell1.picoctf.com/problem/37893/">link</a>) or <a href="http://2019shell1.picoctf.com:37893">http://2019shell1.picoctf.com:37893</a></p>
-<h4 id="solution-27"><em>Solution</em></h4>
+<h4 id="solution-31"><em>Solution</em></h4>
 <p>检查网页源码</p>
 <blockquote>
 <p>function verify() {<br>
@@ -335,28 +383,28 @@ alert(“Password Verified”)<br>
 …</p>
 </blockquote>
 <p>根据顺序还原flag</p>
-<h4 id="flag-27"><em>Flag</em></h4>
+<h4 id="flag-31"><em>Flag</em></h4>
 <blockquote>
 <p>picoCTF{no_clients_plz_90ff34}</p>
 </blockquote>
 <h2 id="logon"><em>logon</em></h2>
-<h4 id="chanllenge-28"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-32"><em>Chanllenge</em></h4>
 <p>The factory is hiding things from all of its users. Can you login as logon and find what they’ve been looking at? <code>https://2019shell1.picoctf.com/problem/49907/</code> (<a href="https://2019shell1.picoctf.com/problem/49907/">link</a>) or <a href="http://2019shell1.picoctf.com:49907">http://2019shell1.picoctf.com:49907</a></p>
-<h4 id="solution-28"><em>Solution</em></h4>
+<h4 id="solution-32"><em>Solution</em></h4>
 <p>经过尝试，发现非admin用户可以登录，却无法获得flag。查看网页cookie，将其中admin元素False改为True。</p>
-<h3 id="flag-28"><em>Flag</em></h3>
+<h3 id="flag-32"><em>Flag</em></h3>
 <blockquote>
 <p>picoCTF{th3_c0nsp1r4cy_l1v3s_9e21365b}</p>
 </blockquote>
 <h2 id="strings-it-1"><em>strings it</em></h2>
-<h4 id="chanllenge-29"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-33"><em>Chanllenge</em></h4>
 <p>Can you find the flag in <a href="https://2019shell1.picoctf.com/static/762b9a36a6da791e3f61713fcfaf1721/strings">file</a> without running it? You can also find the file in /problems/strings-it_2_865eec66d190ef75386fb14e15972126 on the shell server.</p>
-<h4 id="solution-29"><em>Solution</em></h4>
-<h4 id="flag-29"><em>Flag</em></h4>
+<h4 id="solution-33"><em>Solution</em></h4>
+<h4 id="flag-33"><em>Flag</em></h4>
 <blockquote></blockquote>
 <h2 id="section-2">**</h2>
-<h4 id="chanllenge-30"><em>Chanllenge</em></h4>
-<h4 id="solution-30"><em>Solution</em></h4>
-<h4 id="flag-30"><em>Flag</em></h4>
+<h4 id="chanllenge-34"><em>Chanllenge</em></h4>
+<h4 id="solution-34"><em>Solution</em></h4>
+<h4 id="flag-34"><em>Flag</em></h4>
 <blockquote></blockquote>
 
