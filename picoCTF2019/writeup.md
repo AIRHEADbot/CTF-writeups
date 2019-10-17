@@ -169,40 +169,40 @@ $ colordiff kitters.txt cattos.txt | grep -v“ ---”</p>
 <p>There’s a flag shop selling stuff, can you buy a flag? <a href="https://2019shell1.picoctf.com/static/66f01ee2332244dd8290bbefb604a74b/store.c">Source</a>. Connect with <code>nc 2019shell1.picoctf.com 3967</code>.</p>
 <h4 id="solution-13"><em>Solution</em></h4>
 <p>发现购买flag要很多钱，但是你却没办法氪金，怎么办？<br>
-阅读源码，考虑在购买使出现整数溢出的情况。</p>
-
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table><h4 id="flag-13"><em>Flag</em></h4>
+阅读源码，考虑在购买使出现整数溢出的情况。<br>
+<img src="https://lh3.googleusercontent.com/zXVHjNSza_Xgp9x9F8zyecJSA5gZm0XydPXx-JTWqWhO8QC4v3qrLM-xlL_a6FKWz-PqYsDeirc" alt="enter image description here" title="flag_shop"><br>
+然后就可以购买正确flag啦！</p>
+<h4 id="flag-13"><em>Flag</em></h4>
 <blockquote>
 <p>picoCTF{m0n3y_bag5_cd0ead78}</p>
 </blockquote>
-<h2 id="section">**</h2>
+<h2 id="mus1c"><em>mus1c</em></h2>
 <h4 id="chanllenge-14"><em>Chanllenge</em></h4>
+<p>I wrote you a <a href="https://2019shell1.picoctf.com/static/24287456e17d7ee3a35147517fcb9305/lyrics.txt">song</a>. Put it in the picoCTF{} flag format</p>
 <h4 id="solution-14"><em>Solution</em></h4>
+<p>请不要忽视Hints！<br>
+Rockstar是一种语言编译器！<br>
+<a href="https://github.com/marcinruszkiewicz/kaiser-ruby">https://github.com/marcinruszkiewicz/kaiser-ruby</a><br>
+按照README里的提示进行安装，再使用KaiserRuby工具执行吧。<br>
+个人认为这题考察最关键的是信息收集能力orz</p>
 <h4 id="flag-14"><em>Flag</em></h4>
-<blockquote></blockquote>
-<h2 id="section-1">**</h2>
+<blockquote>
+<p>picoCTF{rrrocknrn0113r}</p>
+</blockquote>
+<h2 id="section">**</h2>
 <h4 id="chanllenge-15"><em>Chanllenge</em></h4>
 <h4 id="solution-15"><em>Solution</em></h4>
 <h4 id="flag-15"><em>Flag</em></h4>
 <blockquote></blockquote>
-<h2 id="section-2">**</h2>
+<h2 id="wanna_b3_a_r0ck5tar"><em>1_wanna_b3_a_r0ck5tar</em></h2>
 <h4 id="chanllenge-16"><em>Chanllenge</em></h4>
+<p>I wrote you another <a href="https://2019shell1.picoctf.com/static/8ee87fa624458921e43b786696e37f7f/lyrics.txt">song</a>. Put the flag in the picoCTF{} flag format</p>
 <h4 id="solution-16"><em>Solution</em></h4>
+<p>???</p>
 <h4 id="flag-16"><em>Flag</em></h4>
-<blockquote></blockquote>
+<blockquote>
+<p>???</p>
+</blockquote>
 <h2 id="forensics"><em>Forensics</em></h2>
 <h2 id="glory-of-the-garden"><em>Glory of the Garden</em></h2>
 <h3 id="chanllenge-17"><em>Chanllenge</em></h3>
@@ -233,7 +233,7 @@ $ colordiff kitters.txt cattos.txt | grep -v“ ---”</p>
 <blockquote>
 <p>PICOCTF{THENUMBERSMASON}</p>
 </blockquote>
-<h2 id="section-3"><em>13</em></h2>
+<h2 id="section-1"><em>13</em></h2>
 <h3 id="chanllenge-20"><em>Chanllenge</em></h3>
 <p>Cryptography can be easy, do you know what ROT13 is? <code>cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}</code></p>
 <h3 id="solution-20"><em>Solution</em></h3>
@@ -325,7 +325,7 @@ alert(“Password Verified”)<br>
 <h3 id="solution-26"><em>Solution</em></h3>
 <h3 id="flag-26"><em>Flag</em></h3>
 <blockquote></blockquote>
-<h2 id="section-4">**</h2>
+<h2 id="section-2">**</h2>
 <h3 id="chanllenge-27"><em>Chanllenge</em></h3>
 <h3 id="solution-27"><em>Solution</em></h3>
 <h3 id="flag-27"><em>Flag</em></h3>
