@@ -345,11 +345,80 @@ system(‘unar ./{}/{}.tar’.format(i+1, i))</p>
 <blockquote>
 <p>picoCTF{crossingtherubiconvrtezsxl}</p>
 </blockquote>
+<h2 id="flags"><em>Flags</em></h2>
+<h4 id="chanllenge-30"><em>Chanllenge</em></h4>
+<p>What do the <a href="https://2019shell1.picoctf.com/static/ae23b7df04365ab0213f0158c5b5d694/flag.png">flags</a> mean?</p>
+<h4 id="solution-30"><em>Solution</em></h4>
+<p>国际信号旗<br>
+百度百科是不全的，这里建议使用Wiki进行查询</p>
+<h4 id="flag-30"><em>Flag</em></h4>
+<blockquote>
+<p>PICOCTF{F1AG5AND5TUFF}</p>
+</blockquote>
+<h2 id="mr-worldwide"><em>Mr-Worldwide</em></h2>
+<h4 id="chanllenge-31"><em>Chanllenge</em></h4>
+<p>A musician left us a <a href="https://2019shell1.picoctf.com/static/46e165b0a953075440f3a544fdb4cff1/message.txt">message</a>. What’s it mean?</p>
+<h4 id="solution-31"><em>Solution</em></h4>
+<p>由题可知，这是道经纬度转换题。将题目所给的经纬度进行地域对应，取所在城市的首字母即可。（Sleeptown虽然是个镇，但这里不取NewYork的N，而是取原本的S）遇到不确定的可多尝试几次。</p>
+<h4 id="flag-31"><em>Flag</em></h4>
+<blockquote>
+<p>picoCTF{KODIAK_ALASKA}</p>
+</blockquote>
+<h2 id="tapping"><em>Tapping</em></h2>
+<h4 id="chanllenge-32"><em>Chanllenge</em></h4>
+<p>Theres tapping coming in from the wires. What’s it saying <code>nc 2019shell1.picoctf.com 45168</code>.</p>
+<h4 id="solution-32"><em>Solution</em></h4>
+<p>MorseCode</p>
+<h4 id="flag-32"><em>Flag</em></h4>
+<blockquote></blockquote>
+<h2 id="section-1">**</h2>
+<h4 id="chanllenge-33"><em>Chanllenge</em></h4>
+<h4 id="solution-33"><em>Solution</em></h4>
+<h4 id="flag-33"><em>Flag</em></h4>
+<blockquote>
+<p>PICOCTF{M0RS3C0D31SFUN1818224575}</p>
+</blockquote>
+<h2 id="la-cifra-de"><em>la cifra de</em></h2>
+<h4 id="chanllenge-34"><em>Chanllenge</em></h4>
+<p>I found this cipher in an old book. Can you figure out what it says? Connect with <code>nc 2019shell1.picoctf.com 39776</code></p>
+<h4 id="solution-34"><em>Solution</em></h4>
+<p>本题乍看下是传统的替换加密题，但将、<code>pohzCZK{m311a50_0x_a1rn3x3_h1ah3x1119h336}</code>进行分析后，发现并没有这么简单。<br>
+进行词频分析，发现出现频率最高的三字单词为<code>yse</code>，盲猜对应<code>the</code>，再结合文中的数字（基本为年份），猜测加密手法为维吉尼亚密码。<br>
+Wiki中说明道：<code>First described by [Giovan Battista Bellaso]in his 1553 book 《La cifra del. Sig. Giovan Battista Bellaso》 in 1553, the cipher is easy to understand and implement</code>进一步印证了猜想。</p>
+<h4 id="flag-34"><em>Flag</em></h4>
+<blockquote>
+<p>picoCTF{b311a50_0r_v1gn3r3_c1ph3raac148e7}</p>
+</blockquote>
+<h2 id="section-2">**</h2>
+<h4 id="chanllenge-35"><em>Chanllenge</em></h4>
+<h4 id="solution-35"><em>Solution</em></h4>
+<h4 id="flag-35"><em>Flag</em></h4>
+<blockquote></blockquote>
+<h2 id="section-3">**</h2>
+<h4 id="chanllenge-36"><em>Chanllenge</em></h4>
+<h4 id="solution-36"><em>Solution</em></h4>
+<h4 id="flag-36"><em>Flag</em></h4>
+<blockquote></blockquote>
+<h2 id="section-4">**</h2>
+<h4 id="chanllenge-37"><em>Chanllenge</em></h4>
+<h4 id="solution-37"><em>Solution</em></h4>
+<h4 id="flag-37"><em>Flag</em></h4>
+<blockquote></blockquote>
+<h2 id="section-5">**</h2>
+<h4 id="chanllenge-38"><em>Chanllenge</em></h4>
+<h4 id="solution-38"><em>Solution</em></h4>
+<h4 id="flag-38"><em>Flag</em></h4>
+<blockquote></blockquote>
+<h2 id="section-6">**</h2>
+<h4 id="chanllenge-39"><em>Chanllenge</em></h4>
+<h4 id="solution-39"><em>Solution</em></h4>
+<h4 id="flag-39"><em>Flag</em></h4>
+<blockquote></blockquote>
 <h2 id="web"><em>Web</em></h2>
 <h2 id="insp3ct0r"><em>Insp3ct0r</em></h2>
-<h4 id="chanllenge-30"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-40"><em>Chanllenge</em></h4>
 <p>Kishor Balan tipped us off that the following code may need inspection: <code>https://2019shell1.picoctf.com/problem/52962/</code> (<a href="https://2019shell1.picoctf.com/problem/52962/">link</a>) or <a href="http://2019shell1.picoctf.com:52962">http://2019shell1.picoctf.com:52962</a></p>
-<h3 id="solution-30"><em>Solution</em></h3>
+<h3 id="solution-40"><em>Solution</em></h3>
 <p>检查网页源码，发现以下三段信息<br>
 index:</p>
 <blockquote>
@@ -363,14 +432,14 @@ index:</p>
 <blockquote>
 <p>Javascript sure is neat. Anyways part 3/3 of the flag: _lucky?39dd9e36}</p>
 </blockquote>
-<h3 id="flag-30"><em>Flag</em></h3>
+<h3 id="flag-40"><em>Flag</em></h3>
 <blockquote>
 <p>picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?39dd9e36}</p>
 </blockquote>
 <h2 id="dont-use-client-side"><em>dont-use-client-side</em></h2>
-<h4 id="chanllenge-31"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-41"><em>Chanllenge</em></h4>
 <p>Can you break into this super secure portal? <code>https://2019shell1.picoctf.com/problem/37893/</code> (<a href="https://2019shell1.picoctf.com/problem/37893/">link</a>) or <a href="http://2019shell1.picoctf.com:37893">http://2019shell1.picoctf.com:37893</a></p>
-<h4 id="solution-31"><em>Solution</em></h4>
+<h4 id="solution-41"><em>Solution</em></h4>
 <p>检查网页源码</p>
 <blockquote>
 <p>function verify() {<br>
@@ -388,28 +457,28 @@ alert(“Password Verified”)<br>
 …</p>
 </blockquote>
 <p>根据顺序还原flag</p>
-<h4 id="flag-31"><em>Flag</em></h4>
+<h4 id="flag-41"><em>Flag</em></h4>
 <blockquote>
 <p>picoCTF{no_clients_plz_90ff34}</p>
 </blockquote>
 <h2 id="logon"><em>logon</em></h2>
-<h4 id="chanllenge-32"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-42"><em>Chanllenge</em></h4>
 <p>The factory is hiding things from all of its users. Can you login as logon and find what they’ve been looking at? <code>https://2019shell1.picoctf.com/problem/49907/</code> (<a href="https://2019shell1.picoctf.com/problem/49907/">link</a>) or <a href="http://2019shell1.picoctf.com:49907">http://2019shell1.picoctf.com:49907</a></p>
-<h4 id="solution-32"><em>Solution</em></h4>
+<h4 id="solution-42"><em>Solution</em></h4>
 <p>经过尝试，发现非admin用户可以登录，却无法获得flag。查看网页cookie，将其中admin元素False改为True。</p>
-<h3 id="flag-32"><em>Flag</em></h3>
+<h3 id="flag-42"><em>Flag</em></h3>
 <blockquote>
 <p>picoCTF{th3_c0nsp1r4cy_l1v3s_9e21365b}</p>
 </blockquote>
 <h2 id="strings-it-1"><em>strings it</em></h2>
-<h4 id="chanllenge-33"><em>Chanllenge</em></h4>
+<h4 id="chanllenge-43"><em>Chanllenge</em></h4>
 <p>Can you find the flag in <a href="https://2019shell1.picoctf.com/static/762b9a36a6da791e3f61713fcfaf1721/strings">file</a> without running it? You can also find the file in /problems/strings-it_2_865eec66d190ef75386fb14e15972126 on the shell server.</p>
-<h4 id="solution-33"><em>Solution</em></h4>
-<h4 id="flag-33"><em>Flag</em></h4>
+<h4 id="solution-43"><em>Solution</em></h4>
+<h4 id="flag-43"><em>Flag</em></h4>
 <blockquote></blockquote>
-<h2 id="section-1">**</h2>
-<h4 id="chanllenge-34"><em>Chanllenge</em></h4>
-<h4 id="solution-34"><em>Solution</em></h4>
-<h4 id="flag-34"><em>Flag</em></h4>
+<h2 id="section-7">**</h2>
+<h4 id="chanllenge-44"><em>Chanllenge</em></h4>
+<h4 id="solution-44"><em>Solution</em></h4>
+<h4 id="flag-44"><em>Flag</em></h4>
 <blockquote></blockquote>
 
